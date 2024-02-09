@@ -1,0 +1,1270 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Metro Fruits</title>
+<link rel="icon" href="img/frutas.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header> 
+	<div class="container-hero"><!--Header-->
+		<div class="container hero">
+		<div class="customer-support"> <!--Soporte-->
+			<i class="fa-solid fa-headset"></i>
+			<div class="content-costumer-support">
+				<span class="text">Atención al cliente</span>
+				<span class="number">993 191 193</span>
+			</div>
+		</div>
+	
+		<div class="container-logo"> <!--Logo y titulo-->
+			<i class="fa-solid fa-apple-whole"></i>
+			<h1 class="logo"><a href="/">Metro Fruits</a></h1>
+		</div>
+			
+		<div class="container-user"> <!--Carrito-->
+			<a href="#formu"><i class="fa-solid fa-basket-shopping"></i></a>
+				<div class="content-shopping-cart">
+				<span class="text">Lista de</span>
+				<span class="number">Compras</span>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="navegacion"> <!--Menu principal-->
+			<nav class="navbar container">
+				<div class="menu-icon" onclick="toggleMenu()">
+					<i class="fa-solid fa-bars"></i>
+				  </div>  
+			<ul class="menu"><!--Cada # significa un enlace -->
+				<li><a href="#slider">Inicio</a></li>
+				<li><a href="#top-products">Catálogo</a></li> 
+				<li><a href="#Información">Nosotros</a></li>
+				<li><a href="#contacto">Contactenos</a></li>
+				</ul>
+				</nav>
+			</div>
+	 	</header>
+
+
+	<div class="conte">	<!--Slider de Frutas-->
+	<section id="slider" class="slider2">
+		<ul>
+			<li><img src="img/IMGSLIDER1.jpg" alt="Imagen 1">
+				<span class="resal">Endulza tu vida con una fruta.🍓</span></li>
+			<li><img src="img/IMGSLIDER2.jpg" alt="Imagen 2">
+				<span class="resal">Compra inteligente, compra sano.🍉</span></li>
+			<li><img src="img/IMGSLIDER3.jpg" alt="Imagen3">
+				<span class="resal">Frutas del campo a tu mesa.🍴🍇</span></li>
+			<li><img src="img/IMGSLIDER4.jpg" alt="Imagen4">
+				<span class="resal">Vibrante y saludable: ¡frutas para ti!🍎</span></li>
+		</ul>
+	</section>
+
+
+	<section id="top-products" class="container top-products"> 
+		<h1 class="SUBTITU">Catálogo</h1>	<!--Sub-menú-->
+		<div class="container-options">	<!--Opciones de frutas-->
+			<span class="opcion" data-categoria="dulces"> Frutas Dulces</span>
+			<span class="opcion" data-categoria="acidas">Frutas Ácidas</span>
+			<span class="opcion" data-categoria="secos">Frutos Secos</span>
+		</div>
+		
+		
+		<div class="container-products"><!--Contenedor de todas las frutas-->
+			<div class="cartas dulces"><!--Fruta DULCE-->
+				<div class="container-img">
+					<img src="img/SANDIA-313x313.jpg" alt="Sandia"/>
+					<span class="discount">-16%</span>	
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Sandia</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/13.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/17.40</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+					<!-- Contenido del modal -->
+			<div id="myModal" class="modal"> <!-- Cuerpo del Cuadro -->
+				<span class="close" onclick="cerrarCuadro()">&times;</span>
+				<div class="modal-content-container">
+					<img id="imgModal" src="" alt="Imagen en el modal">
+					<div id="imgTextContainer">
+						<p id="imgText"></p>
+					</div>
+				</div>
+			</div>
+			<div id="overlay" class="overlay" onclick="cerrarCuadro()"></div>
+
+
+			<div class="cartas dulces"><!--Fruta n2-->
+				<div class="container-img">
+					<img src="img/fresa-313x313.jpg" alt="Fresa" />
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Fresa</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/12.50 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n3-->
+				<div class="container-img">
+					<img src="img/uva (1).png" alt="Uva"/>
+					<span class="discount">-18%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Uva</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/8.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/11.90 </span>
+						</div>
+					  </div>
+				</div>
+			</div>
+		
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/manzana-roja-chilena-313x313.png" alt="Fresa" />
+					<span class="discount">-15%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Manzana</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/11.50 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/14.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+		
+
+				<!-- FRUTAS ACIDAS  -->
+
+
+			<div class="cartas acidas"><!--Fruta ACIDA-->
+				<div class="container-img">
+					<img src="img/naranja.png" alt="Naranja"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Naranja</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/8.80 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/10.40</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n2-->
+				<div class="container-img">
+					<img src="img/kiwi.png" alt="Kiwi"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Kiwi</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/13.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n3-->
+				<div class="container-img">
+					<img src="img/piña (2).jpg" alt="Piña"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Piña</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/5.90 x Unidad</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			
+			<div class="cartas acidas"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/ciruela (1).jpg" alt="Ciruela"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div >
+					<h3>Ciruela</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+							<p class="price">S/11.80 x Kilo</p>
+						</div>
+						<div class="price-container">
+							<span class="price-span">S/13.90</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n5-->
+				<div class="container-img">
+					<img src="img/frambuesa (1).jpg" alt="Frambuesa"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Frambuesa</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/11.80 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/13.90</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n6-->
+				<div class="container-img">
+					<img src="img/membrillo (1).jpg" alt="Frambuesa"/>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Menbrillo</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/3.80 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/4.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>	
+			
+			<div class="cartas dulces"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/pera.jpg" alt="Pera"/>
+					<span class="discount">-20%</span>	
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Pera</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/6.40</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/coco (1).jpg" alt="Sandia"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Coco</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/10.90 x Unidad</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/durazno (1).jpg" alt="Durazno"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Durazno</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/7.50 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/platano.jpg" alt="Platano" />
+					<span class="discount">-23%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Platano</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/7.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/almendras (1).jpg" alt="Almendras"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Almendras</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/23.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+				<!--revisado parte1-->
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/toronja.png" alt="Toronja"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Toronja</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/9.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/mango.jpg" alt="Mango" />
+					<span class="discount">-23%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Mango</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/7.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/nuez.jpg" alt="Nuez"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Nuez</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/24.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/arandano-313x313.jpg" alt="Arandano"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Arandano</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/19.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/higos.jpg" alt="Higo" />
+					<span class="discount">-13%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Higo</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/7.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/9.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/pecanas.jpg" alt="Pecanas"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Pecanas</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/33.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/cerezas.jpg" alt="Cerezas"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cerezas</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/39.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/melon.jpg" alt="Melón" />
+					<span class="discount">-33%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Melón</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/8.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/pishtachos.jpg" alt="Pistachos"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Pistachos</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/26.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/lima.jpg" alt="Lima"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Lima</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/12.49 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/mandarina.jpg" alt="Mandarina" />
+					<span class="discount">-33%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Mandarina</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Kilo</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/8.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/avellanas.jpg" alt="Avellana"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Avellana</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/27.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/granada.jpg" alt="Granada"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Granada</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/13.49 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/granadilla.png" alt="Granadilla" />
+					<span class="discount">-28%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Granadilla</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/9.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/12.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/mani.jpg" alt="Maní"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Maní</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/26.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/maracuya.jpg" alt="Maracuyá"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Maracuyá</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/6.49 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/papaya.jpg" alt="Papaya" />
+					<span class="discount">-25%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Papaya</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/3.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/6.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas secos"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/pasas.jpg" alt="Pasas"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Pasas</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/3.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/aguaymanto.png" alt="Aguaymanto"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Aguaymanto</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/5.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/pitahaya (1).jpg" alt="Pitahaya" />
+					<span class="discount">-28%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Pitahaya</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/4.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/7.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas acidas"><!--Fruta n1-->
+				<div class="container-img">
+					<img src="img/camu camu.jpg" alt="Camu Camu"/>
+				  </div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Camu Camu</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/9.90 x Kilo</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/chirimoya.jpg" alt="Chirimoya"/>
+					<span class="discount">-28%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Chirimoya</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/6.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/9.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/lucuma.jpg" alt="Lúcuma"/>
+					<span class="discount">-28%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Lúcuma</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/7.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/9.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+
+			<div class="cartas dulces"><!--Fruta n4-->
+				<div class="container-img">
+					<img src="img/tuna.png" alt="Tuna"/>
+					<span class="discount">-28%</span>
+				</div>
+				<div class="conte-iconos">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Tuna</h3>
+					<div class="conte-iconos">
+						<div class="price-container">
+						  <p class="price">S/7.90 x Unidad</p>
+						</div>
+						<div class="price-container">
+						  <span class="price-span">S/9.50</span>
+						</div>
+					  </div>
+				</div>
+			</div>
+	</section>
+
+	<footer class="footer">  <!--PIE DE PAGINA-->
+		<div class="container container-footer">
+			<div class="menu-footer">
+				<div id="Información" class="information">
+					<p class="title-footer">¿Quiénes Somos?</p>
+					<p class="texto">Somos una tienda de frutas comprometida con ofrecer productos frescos y de alta calidad.
+						 Nos esforzamos por ser la mejor opción para aquellos que buscan opciones saludables y deliciosas.
+						  Nuestro equipo está dedicado a proporcionar un servicio amable y brindar una 
+						  experiencia de compra agradable. ¡Bienvenido a nuestra tienda de frutas!</p>
+				</div>
+		
+				<div id="contacto" class="contact-info">
+					<p class="title-footer">Información de Contacto</p>
+					<ul class="datoscontac">
+						<li>Mz. I Sub Lote 4-A-5, C. 11, San Juan de Lurigancho 15457</li>
+						<li>Teléfono: 982754272</li>
+						<li>Email: MetroFruitsPerú@support.com</li>
+					</ul>
+		
+					<div class="social-icons">
+						<span class="facebook">
+							<a href="https://www.facebook.com/" target="_blank">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+						</span>
+						<span class="twitter">
+							<a href="https://twitter.com/?lang=es" target="_blank">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</span>
+						<span class="whatsapp">
+							<a href="https://web.whatsapp.com/" target="_blank">
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+						</span>
+						<span class="instagram">
+							<a href="https://www.instagram.com/" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="formu" id="formu"> <!--Formulario-->
+				<p class="title-footer">Lista de Compras</p>
+				<form action="https://formsubmit.co/lesnerurbanoalejo@gmail.com" method="POST">
+					<label for="nombre">Nombre y Apellido:</label>
+					<input type="text" id="nombre" name="nombre" required>
+				
+					<label for="correo">Correo Electrónico:</label>
+					<input type="email" id="correo" name="correo" required>
+				
+					<label for="listacompra"></label>
+					<textarea id="listacompra" name="Lista_de_Compras" rows="4" cols="50" 
+					placeholder="Detalle los productos que deseas comprar..." required></textarea>
+
+					<input type="submit" value="Enviar">
+
+					<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+					<input type="hidden" name="_captcha" value="false">
+				</form>
+			</div>
+	
+			<div id="Ubicación" class="Ubicación">
+				<p class="titlemapa">Ubicación</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.3470233586017!2d-76.96472497579451!3d-12.019613541394055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c43492807ad7%3A0xb8fe188524fca84b!2sMercado%20Sol%20Naciente%2C%20Mz.%20I%20Sub%20Lote%204-A-5%2C%20C.%2011%2C%20San%20Juan%20de%20Lurigancho%2015457!5e0!3m2!1ses-419!2spe!4v1702651705476!5m2!1ses-419!2spe" width="380" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</footer>
+		<script src="https://kit.fontawesome.com/f38ee6745a.js" crossorigin="anonymous"></script>
+
+
+	<!--MENU DESPLEGABLE RESPONSIVE-->
+	<script> 
+			function toggleMenu() {
+			var menuIcon = document.querySelector('.menu-icon');
+			var menu = document.querySelector('.menu');
+
+			menuIcon.classList.toggle('active');
+			menu.classList.toggle('active');
+			}
+	</script>
+
+		
+	<!--MENU PARA SELECCIONAR OPCIONES DE FRUTAS-->
+	<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				mostrarProductos('dulces');
+				mostrarProductos('acidas');
+				mostrarProductos('neutras');
+
+				var opciones = document.querySelectorAll('.opcion');
+				opciones.forEach(function(opcion) {
+					opcion.addEventListener('click', function() {
+						var conjuntosProductos = document.querySelectorAll('.container-products > div');
+						conjuntosProductos.forEach(function(conjunto) {
+							conjunto.style.display = 'none';
+						});
+						var categoriaSeleccionada = opcion.getAttribute('data-categoria');
+
+						mostrarProductos(categoriaSeleccionada);
+					});
+				});
+			});
+
+			function mostrarProductos(categoria) {
+				var conjuntoSeleccionado = document.querySelectorAll('.' + categoria);
+				conjuntoSeleccionado.forEach(function(conjunto) {
+					conjunto.style.display = 'block';
+				});
+			}
+	</script>
+
+
+	<!--DESCRIPCION DE FRUTAS-->
+	<script>
+		// Obtén todos los elementos con la clase "container-img" 
+		var imgContainers = document.querySelectorAll('.container-img');
+	  
+		// Recorre cada elemento y agrega un event listener
+		imgContainers.forEach(function(container, index) {
+		  var img = container.querySelector('img');
+	  
+		  // Reaccion a clic en cada contenedor
+		  container.addEventListener('click', function() {
+			// Obtén el texto correspondiente para este contenedor
+			var text = getTextForIndex(index);
+	  
+			showModal(index, text);
+		  });
+		});
+	  
+		// Función para obtener el texto correspondiente según la Carta
+		function getTextForIndex(index) {
+  switch (index) {
+    case 0:
+      return "<p class=textodiferente><h3>Beneficios de la Sandia</h3><br><p>• Digestión saludable</p><p>• Control de peso</p><p> • Huesos y corazón saludables</p><p> • Regulación de la presión arterial</p><p> • Beneficios para la salud ocular</p>";
+    case 1:
+	  return "<p class=textodiferente><h3>Beneficios de la Fresa</h3><p>• Te ayudan a blanquear la piel</p><p>• Contribuyen a la salud ósea</p><p> • Están cargadas de antioxidantes</p><p> • Tienen manganeso</p><p> • Son una fuente rica en vitaminas</p>";
+    case 2:
+		return "<p class=textodiferente><h3>Beneficios de la Uva</h3><p>• Ayuda contra la retención de líquidos.</p><p>• Reduce el riesgo de diabetes.</p><p> • Mejora nuestro ánimo y memoria.</p><p> • Lucha contra la inflamación</p><p> • Evita el desarrollo de osteoporosis</p>";
+    case 3:
+		return "<p class=textodiferente><h3>Beneficios de la Manzana</h3><p>• Fortalece el sistema inmune.</p><p>• Mejora la función cerebral.</p><p> • Previene contra la diabetes.</p><p> • Lucha contra el asma</p><p> • Evita las caries</p>";
+	case 4:
+		return "<p class=textodiferente><h3>Beneficios de la Naranja</h3><p>• Mantiene una piel sana.</p><p>• Alto contenido en fibra.</p><p> • Bajo índice glucémico.</p><p> •  Reduce el colesterol y la tensión.</p><p> • Prevenir el cáncer</p>";
+	case 5:
+		return "<p class=textodiferente><h3>Beneficios del Kiwi</h3><p>• Controla la glucosa en sangre.</p><p>• Aumenta el bienestar psicológico.</p><p> • Potente antioxidante.</p><p> •  Mejora el sueño.</p><p> • Efecto de saciedad y pérdida de peso</p>";
+	case 6:
+		return "<p class=textodiferente><h3>Beneficios de la Piña</h3><p>• Mejora la circulación sanguínea.</p><p>• Aumenta el bienestar psicológico.</p><p> • Nos aporta energía.</p><p> •  Mejora el aspecto de la piel.</p><p> • Favorece al sistema inmunitario</p>";
+	case 7:
+		return "<p class=textodiferente><h3>Beneficios de la Ciruela</h3><p>• Nos protegen ante enfermedades cardiovasculares.</p><p>• Digestión saludable.</p><p> •  Favorecen la salud ósea.</p><p> •   Evitan la hipertensión .</p><p> • Son ricas en fibra y poseen gran cantidad de agua</p>";
+	case 8:
+		return "<p class=textodiferente><h3>Beneficios de la Frambuesa</h3><p>• Mejoran los niveles de insulina.</p><p>• Son antiinflamatorias.</p><p> • Componentes bioactivos.</p><p> •  Mejoran problemas intestinales.</p><p> • Previenen enfermedades neurodegenerativas</p>";
+	case 9:
+		return "<p class=textodiferente><h3>Beneficios del Membrillo</h3><p>• Mejora la salud capilar.</p><p>• Es diurético.</p><p> • Regula la presión sanguínea.</p><p> •  Ayuda contra reacciones alérgicas.</p><p> • Puede mejorar los niveles de colesterol</p>";
+	case 10:
+		return "<p class=textodiferente><h3>Beneficios de la Pera</h3><p>• Ayuda a perder de peso.</p><p>• Es rica en vitaminas y minerales.</p><p> • Promueve la salud intestinal.</p><p> •  Tiene propiedades antioxidantes.</p><p> • Aumenta la salud del corazón.</p>";
+	case 11:
+		return "<p class=textodiferente><h3>Beneficios del Coco</h3><p>•Control de la presión arterial.</p><p>• Ayuda digestiva.</p><p> •  Efecto hidratante.</p><p> •   Soporte al sistema inmunitario.</p><p> • Aporte diario de hierro.</p>";
+	case 12:
+		return "<p class=textodiferente><h3>Beneficios del Durazno</h3><p>• Favorece al sistema inmunitario.</p><p>• Aporta antioxidantes.</p><p> • Es bueno para la piel.</p><p> •  Favorece la salud cardiovascular.</p><p> • Puede prevenir algunas dolencias digestivas.</p>";
+	case 13:
+		return "<p class=textodiferente><h3>Beneficios del Platano</h3><p>• Regula los trastornos de ánimo.</p><p>• El mejor aliado para adelgazar.</p><p> • Efecto antiinflamatorio.</p><p> • Protege el corazón.</p><p> • Defensa natural contra las bacterias</p>";
+	case 14:
+		return "<p class=textodiferente><h3>Beneficios de las Almendras</h3><p>• Prevención del cáncer.</p><p>• Fortalecen los huesos.</p><p> • Control de Peso.</p><p> •  Alternativa a los lácteos.</p><p> • Previene la diabetes.</p>";	
+	case 15:
+		return "<p class=textodiferente><h3>Beneficios de la Toronja</h3><p>• Puede mejorar la respuesta inmunológica.</p><p>• Control de peso.</p><p> •  Ayuda a cuidar la salud de la piel.</p><p> •  Podría regular la glucosa.</p><p> •  Ayuda a prevenir algunas enfermedades.</p>";
+	case 16:
+		return "<p class=textodiferente><h3>Beneficios del Mango</h3><p>• Ayuda al aumento de peso.</p><p>• Mejorar la memoria.</p><p> • Cuidado de la vista.</p><p> •  Beneficioso para la anemia.</p><p> • Ayuda contra la diabetes.</p>";
+	case 17:
+		return "<p class=textodiferente><h3>Beneficios de la Nuez</h3><p>• Beneficiosas para el cerebro.</p><p>• Ayuda a regular el apetito.</p><p> • Ricas en Omega 3.</p><p> •  Ricas en minerales.</p><p> • Puede mejorar los niveles de colesterol</p>";
+	case 18:
+		return "<p class=textodiferente><h3>Beneficios del Arandano</h3><p>• Reduce la presión arterial.</p><p>• Rejuvenece.</p><p> • Es antiinflamatorio.</p><p> •  Previene el daño en el ADN.</p><p> • Previene enfermedades neurodegenerativas.</p>";
+	case 19:
+		return "<p class=textodiferente><h3>Beneficios del Higo</h3><p>•  Fuente de energía.</p><p>• Elevado contenido en fibra.</p><p> • Poder saciante.</p><p> •  Efecto laxante.</p><p> • Combate las enfermedades del corazón.</p>";
+	case 20:
+		return "<p class=textodiferente><h3>Beneficios de las Pecanas</h3><p> • Potencian el cerebro.</p><p> •  Tienen minerales clave.</p><p>• Ayudan a controlar el peso.</p><p>• Están llenas de flavonoides.</p><p> • Ayudan al sistema inmunológico.</p>";
+	case 21:
+		return "<p class=textodiferente><h3>Beneficios de las Cerezas</h3><p>• Eliminación de toxinas.</p><p>• Mejora de la salud dental. </p><p> • Te ayudan a dormir.</p><p> •  Pueden mantener tu corazón sano.</p><p> • Vitaminas y minerales estratégicos.</p>";
+	case 22:
+		return "<p class=textodiferente><h3>Beneficios del Melón</h3><p>• Dientes y huesos sanos.</p><p>• Salud ocular.</p><p> • Ideal para perder peso.</p><p> •  Cicatrización de las heridas.</p><p> • Salud de los riñones.</p>";
+	case 23:
+		return "<p class=textodiferente><h3>Beneficios del Pistacho</h3><p>• Mejoran la salud cardiovascular.</p><p> • Reducen el estrés.</p><p> •  Favorecen el tránsito intestinal.</p><p>• Mejoran la salud cardiaca y el colesterol.</p><p> • Controlan el nivel de azúcar en sangre.</p>";
+	case 24:
+		return "<p class=textodiferente><h3>Beneficios de la Lima</h3><p>• Previene la arteriosclerosis.</p><p> •  Ayuda a desintoxicar al organismo.</p><p>• Ayuda a tratar fatiga.</p><p> • Ayuda a reducir la fiebre.</p><p> • Aporta muchos antioxidantes.</p>";
+	case 25:
+		return "<p class=textodiferente><h3>Beneficios de la Mandarina</h3><p>• Tienen un efecto diurético.</p><p>• Aumentan nuestras defensas.</p><p> •  Antioxidantes.</p><p> • Ayudan a absorber el hierro.</p><p> • Contienen Vitamina A, Calcio y fósforo.</p>";
+	case 26:
+		return "<p class=textodiferente><h3>Beneficios de las Avellanas</h3><p>•  Ricas en ácido oleico.</p><p>• Con muchos minerales.</p><p> • Aptas para diabéticos.</p><p> •  Indicadas durante el <p> •  Antioxidantes.</pcrecimiento.</p><p> • Combaten el estreñimiento.</p>";
+	case 27:
+		return "<p class=textodiferente><h3>Beneficios de la Granada</h3><p>• Previene la pérdida de memoria.	</p><p>• Mejora el aspecto de la piel.</p><p> • Mejora el tránsito intestinal.</p><p> •  Refuerza el sistema <p> •  Antioxidantes.</pinmunitario.</p><p> • Contribuye a un corazón sano.</p>";
+	case 28:
+		return "<p class=textodiferente><h3>Beneficios de la Granadilla</h3><p>• Gran fuente de potasio.</p><p>• Mantiene tu corazón sano.</p><p> • Buena para la vista.</p><p> •  Ayuda en la formación de glóbulos rojos.</p><p> • Puede ser utilizada como un tranquilizante natural.</p>";
+	case 29:
+		return "<p class=textodiferente><h3>Beneficios del Maní</h3><p>• Previene el aumento de peso.</p><p>• Fuente natural de minerales.</p><p> • Ayuda a reducir el colesterol.</p><p> •  Ayuda al crecimiento.</p><p> • Previene derrames cerebrales.</p>";	
+	case 30:
+		return "<p class=textodiferente><h3>Beneficios de la Maracuyá</h3><p> • Controlar la presión arterial.</p><p>• Controlar y prevenir la diabetes . </p><p> • Combatir el insomnio.</p><p> •  Ayudar en la pérdida de peso .</p><p>• Disminuir la ansiedad y el estrés .</p>";
+	case 31:
+		return "<p class=textodiferente><h3>Beneficios de la Papaya</h3><p>• Ayuda a la piel y cicatrización.</p><p> • Prevención del asma.</p><p> •  Salud del cabello.</p><p>• Mejora la digestión.</p><p> • Previene enfermedades cardíacas.</p>";
+	case 32://proceso
+		return "<p class=textodiferente><h3>Beneficios de las Pasas</h3><p>• Ayudan a prevenir la anemia.</p><p> •  Mejoran la salud ósea.</p><p>• Protegen a los ojos.</p><p> • Ayuda a reducir la fiebre.</p><p> • Ayudan a reducir el nivel de acidez en la sangre.</p>";
+	case 33:
+		return "<p class=textodiferente><h3>Beneficios del Aguaymanto</h3><p>• Fortalece el sistema inmune.</p><p>• Alivia el estrés.</p><p> • Retrasa el envejecimiento.</p><p> •  Mejora tu salud respiratoria.</p><p> • Es un alimento energético.</p>";
+	case 34:
+		return "<p class=textodiferente><h3>Beneficios de la Pitahaya</h3><p>•  Favorecer la pérdida de peso.</p><p>• Regular el azúcar en sangre.</p><p> • Fortalecer los huesos .</p><p> •  Mejorar la digestión.</p><p> • Protege las células del organismo.</p>";
+	case 35:
+		return "<p class=textodiferente><h3>Beneficios del Camu Camu</h3><p>• Regenera los tejidos y da energía.	</p><p>• Alimento rico en potasio.</p><p> • Elimina el estrés oxidativo.</p><p> •  Evita la aparición del cáncer.</p><p> • Estimula la formación de los huesos.</p>";
+	case 36:
+		return "<p class=textodiferente><h3>Beneficios de la Chirimoya</h3><p>• Mejora tu Salud Cardiovascular.</p><p>• Protege contra la Osteoporosis.</p><p> • Propiedades Digestivas.</p><p> •  Mejora tu Salud Cardiovascular.</p><p> • Efecto Antidepresivo y Tranquilizante..</p>";	
+	case 37:
+		return "<p class=textodiferente><h3>Beneficios de la Lúcuma</h3><p>• Combate la diabetes.</p><p>• Es un potente antioxidante.</p><p> • Reduce nivel de colesterol.</p><p> •  Ayuda a combatir la depresión.</p><p> • Protege la piel de las radiaciones solares.</p>";
+	case 38:
+		return "<p class=textodiferente><h3>Beneficios de la Tuna</h3><p>•  Cuidar la salud del corazón.</p><p>• Aportar antioxidantes.</p><p> • Ayuda a subir las defensas.</p><p> •  Combatir el estreñimiento.</p><p> • Prevenir la formación de úlceras gástricas.</p>";	
+  }
+}
+
+// Función para cerrar el cuadro 
+function cerrarCuadro() {
+  var modal = document.getElementById('myModal');
+  var overlay = document.getElementById('overlay');
+  modal.style.display = 'none';
+  overlay.style.display = 'none';
+}
+
+// Mstrar el modal con la imagen y el texto correspondientes
+function showModal(index, text) {
+  var modal = document.getElementById('myModal');
+  var overlay = document.getElementById('overlay');
+  var modalImg = document.getElementById('imgModal');
+  var modalText = document.getElementById('imgText');
+
+  // Asigna la imagen correspondiente al modal
+  modalImg.src = imgContainers[index].querySelector('img').src;
+  modalText.innerHTML = text;
+
+  // Muestra el modal y el overlay
+  modal.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+window.onclick = function(event) {
+  var modal = document.getElementById('myModal');
+  var overlay = document.getElementById('overlay');
+  if (event.target === modal) {
+    cerrarCuadro(); 
+  }
+};
+
+
+	  </script>
+</body>
+</html>

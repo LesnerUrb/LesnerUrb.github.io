@@ -1,0 +1,1042 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+
+html{	/*fuente de letra de toda la pagina web*/
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+}
+
+*{	/*estilo para toda la pagina web*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{	/*tmaño de la primera columna*/
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-hero{	/*color de la primera fila*/
+    background-color: rgb(147, 223, 166);
+}
+
+.hero{	/*estructura y posicion de toda la primera fila */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;   
+	font-size: 1.3rem;
+}
+.customer-support{	/*ubicacion del texto*/
+    display: flex;
+    gap: 2rem;
+}
+
+.customer-support i{	/*tamaño soporte*/
+    font-size: 3.3rem;
+}
+.container-logo{	/*posicionamiento del logo*/
+    display: flex;
+	gap: 1.5rem;
+}
+.container-logo i{	/*tamaño del logo*/
+    font-size: 5rem;
+	margin-left: 110px;
+}
+.container-logo h1 a{	/*texto del logo*/
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+	margin-left: -265px;
+}
+
+.container-user{	/*tamaño del primera columna - logo-iconos*/
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.container-user .fa-user{	/*estilo user*/
+    font-size: 3rem;
+    color: rgb(0, 116, 16);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+}
+.container-user .fa-basket-shopping{	/*estilo canasta*/
+    font-size: 4rem;
+    color: rgb(0, 116, 16);
+    margin-left: 2rem;
+}
+
+.container-user span{
+	color: black;
+	font-size: 15px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.content-shopping-cart{	/*estilo texto carrito*/
+    display: flex;
+    flex-direction: column;
+	margin-left: .5rem;
+}
+
+.navegacion{	/*tamaño y color del menu principal*/
+    background-color: rgb(7, 129, 38);
+	height: 50px;
+}
+.navbar{	/*posicionamiento del menu principal*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navbar i{	/*oculta el menu de barras para responsive*/
+	display: none;
+}
+.menu{	/*direccion del menu principal*/
+    display: flex;
+	margin: auto;
+}
+.menu li{	/*espacio entre opciones*/
+    list-style: none;
+	margin: 25px;
+	margin-top: 1px;
+
+}
+.menu a{  /*estilo opciones del menu principal*/
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+	margin: auto;
+}
+
+.menu a:hover{	/*sombreado opciones menu*/
+    color: black;
+}
+
+.slider2{	/*estructura del slider*/
+    width: 100%;
+    height: 600px;
+    margin:  auto;
+    overflow: hidden;
+}
+.slider2 ul{  /*posicion y direccion del slider*/
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 20s infinite linear;
+}
+.slider2 li{	/*largo del slider*/
+    width: 100%;
+    list-style: none;
+}
+.slider2 img{	/*tamaño imagenes slider*/
+    width: 100%;
+    height: 600px;
+}
+
+.resal{	/*cuerpo de frase de cada slider*/
+    border-radius: 35px;
+    background-color: rgb(7, 129, 38);
+    padding: 10px;
+    color: white;
+	top: -150px;
+	position: relative;
+	left: 150px;
+	font-size: 30px;
+}
+
+@keyframes cambio {  /*transicion del slider*/
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.top-products {	/*espacio entre subtitulo y opciones*/
+	display:grid;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.SUBTITU{  /*ubicacion de subtitulo y tamaño*/
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+
+}
+.container-options {  /*ubicacion de opciones frutas tipo*/
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+}
+
+.container-options { /*tamaño de opciones */
+    display: flex;
+	padding: 0.7rem 3rem;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	border-radius: 2rem;
+	cursor: pointer;
+  }
+
+  .opcion {  /*estilo de opciones tipo de frutas*/
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #0eaa0e;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .opcion:hover {	/*color de sombreado de opciones*/
+    background-color: #0ee444;
+  }
+
+.container-products {	/*orden de todas las cartas en el contenedor*/
+	display: flex;
+    flex-wrap: wrap;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 3rem;
+}
+
+.cartas {  /*estructura de cada carta fruta*/
+	width: 250px;
+	height: 360px;
+	background-color: #fff;
+	padding: 2rem 3rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    border: 1.8px solid green;
+	margin: auto;
+}
+
+.container-img {	/*orden de  todas las cartas*/
+	position: relative;
+}
+
+.modal {  /*cuerpo del cuadro de descripcion de fruta*/
+	width:600px;
+	height: 400px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: 3px solid green;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);		
+	z-index: 1000;
+	font-size: 15px;
+}
+
+.modal-content {
+	position: relative;
+  }
+  
+  /* Estilos para la imagen en el modal */
+  #imgModal {
+	max-width: 100%;
+	max-height: 30vh;
+	margin-left: 310px;
+	margin-top: 70px; 
+  }
+  
+  /* Estilos para el texto del modal */
+  #imgTextContainer {
+	position: absolute;
+	top: 30px;
+	margin-left: -5px;
+	padding: 10px;
+	width: 70%;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  
+  /* Estilos para el texto en el modal */
+  #imgText {
+	color: black;
+	margin: 0;
+	text-align: left; 
+	
+  }
+  /* Ajusta el espacio vertical entre párrafos */
+  #imgText p {
+	margin-bottom: 15px; 
+	font-size: 17px;
+  }
+  #imgText h3{
+	position: relative;
+	color: rgb(12, 231, 49);
+	font-size: 32px;
+	text-align: center;
+	left: 60px;
+	margin-bottom: 5px;
+}
+
+.overlay {  /*sombreado de cuadro de frutas*/
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+  /* Estilos para el botón "Cerrar" */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	font-size: 90px;
+	cursor: pointer;
+	color: #555;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 15px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 10px;
+  }
+  
+  .close:hover {
+	background-color: #45a049;
+	color: white;
+  }
+
+.dulces img { /*tamaño imagenes*/
+	width: 100%;
+}
+.acidas img { /*tamaño imagenes*/
+	width: 100%;
+}
+.secos img{
+	width: 100%;
+}
+
+.dulces .discount {  /*cuerpo descuento*/
+	position: absolute;
+	left: 0;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 2px 1.2rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.cartas:hover .discount {  /*sombreado descuento*/
+	background-color: #000;
+}
+
+.conte-iconos {  /*orden de cada carta*/
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 1rem;
+}
+
+.stars {  /*ubicacion estrellas*/
+	grid-row: 1/2;
+	grid-column: 1/-1;
+}
+
+.stars i { /*estilo estrellas*/
+	font-size: 1.3rem;
+	color: var(--primary-color);
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+}
+
+.conte-iconos h3 { /*estilo nombres cartas*/
+	grid-row: 2/3;
+	grid-column: 1/-1;
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin-top: -.2rem;
+	cursor: pointer;
+}
+
+.conte-iconos { /*posicion iconos*/
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+  }
+  
+  .price-container { /*espacio precio*/
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .price {
+	/* tamaño precios */
+	font-size: 2.0rem;
+	font-weight: 600;
+  }
+  
+  .price-span {
+	/* subrayado precios */
+	font-size: 1.7rem;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #777;
+	margin-left: auto; /* Alinea el span a la derecha */
+  }
+
+/* Footer */
+.footer {
+	width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+/* Contenedor del Footer */
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+/* Columnas dentro del Footer */
+.menu-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+/* Estilos compartidos para cada sección*/
+.title-footer {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.texto{ /*texto de quienes somos*/
+	color: white;
+	font-size: 15px;
+	margin-top: 20px;
+	margin: 0 15px;
+}
+.datoscontac{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.titlemapa{	 /* estilo titulo del mapa*/
+	margin-top: -130px;
+	font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+/* mismos estilos par varias secciones */
+.information,
+.contact-info,
+.formu {
+  padding: 10px 10px; 
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  box-sizing: border-box; 
+  display: inline-block;  
+  gap: -50px;
+}
+
+/*cuerpo y color de fondo*/
+.Ubicación {
+    padding: 160px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Ajustes específicos para la sección de Ubicación */
+.Ubicación {
+    grid-column: span 2;
+    top: -140px; 
+}
+
+/* Ubicación la imagen dentro del iframe */
+.Ubicación iframe {
+    width: 100%;
+    height: 400%;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px; 
+}
+
+/* Estilos del formulario dentro 
+del Footer */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+/*posicion de letra de 
+campo*/
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+/*estilo campos-formulario*/
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+/*estilo-boton enviar*/
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#listacompra{ /*estilo apra lista de compras*/
+	width: 400px;
+	height: 210px;
+	resize: none;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/*espacio entre formas de medios de contacto*/
+.contact-info ul,	
+.information ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li, /*color de medios de contacto*/
+.information ul li,
+.Ubicación ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.social-icons {		/*direccion de los iconos*/
+	display: flex;
+	gap: 1.5rem;
+	cursor: pointer;
+	margin: auto;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+.social-icons span {	/*tamaño de iconos*/
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*color cuerpo iconos*/
+.social-icons span i {	/*color cuerpo iconos*/
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {	/*estilo icono*/
+	background-color: #3b5998;
+}
+
+.twitter {	/*estilo icono*/
+	background-color: #33d5f1;
+}
+
+.whatsapp {	/*estilo icono*/
+	background-color: #33db6b;
+}
+
+.instagram {	/*estilo icono*/
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+@media only screen and (max-width: 1200px) {
+	html {		/*tamaño de pagina responsive*/
+		width: 100%;
+	}
+
+	.container-logo i{	/*tamaño del logo*/
+		font-size: 11rem;
+		margin-left: 490px;
+	}
+	.container-logo h1 a{	/*texto del logo*/
+		text-decoration: none;
+		color: #000;
+		font-size: 7rem;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		margin-left: -600px;
+	}
+	
+	.hero {	/*tamaño primera columan*/
+		padding: 3.5rem;
+	}
+
+	.customer-support { /*ocultar soporte*/
+		display: none;
+	}
+	.container-user .fa-basket-shopping{	/*estilo canasta*/
+		font-size: 7rem;
+		color: rgb(0, 116, 16);
+		margin-left: 2rem;
+	}
+	
+	.container-user span{
+		color: black;
+		font-size: 30px;
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+	}
+	.content-shopping-cart{	/*estilo texto carrito*/
+		display: flex;
+		flex-direction: column;
+		margin-left: .5rem;
+	}
+	
+	.navegacion{	/*tamaño y color del menu principal*/
+		background-color: rgb(7, 129, 38);
+		height:100px;
+	}
+
+/*SLIDER */
+
+.slider2{	/*tamaño del slider*/
+    width: 100%;
+    height: 700px;
+    margin:  auto;
+    overflow: hidden;
+}
+.slider2 ul{	/*transicion del slider*/
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 15s infinite linear;
+}
+
+.slider2 img{	/*tamaño de las iamgenes del slider*/
+    width: 100%;
+    height: 700px;
+}
+.resal{	/*tamaño y estilo de frases slider*/
+    border-radius: 35px;
+    background-color: rgb(7, 129, 38);
+    padding: 30px;
+    color: white;
+	top: -150px;
+	position: relative;
+	left: 50px;
+	font-size: 35px;
+}
+
+.menu {	/*tamaño del menu*/
+	width: 75%;
+	margin: auto;
+  }
+
+  .menu-icon {	/*opcion de puntero en opciones*/
+	cursor: pointer;
+  }
+  
+  .container-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
+    gap: 3rem;
+}
+
+  .modal {	/*cuerpo del cuadro de descripcion de fruta*/
+	width: 780px;
+	height: 920px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: 5px solid green;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);		
+	z-index: 1000;
+	font-size: 10px;
+}
+
+.modal-content {
+	position: relative;
+  }
+  
+  /* Estilos para la imagen en el modal */
+  #imgModal {
+	max-width: 100%;
+	max-height: 27vh; /* Puedes ajustar esto según tus necesidades */
+	margin-left: 380px;
+	margin-top: 250px; 
+  }
+  
+  /* Estilos para el contenedor del texto en el modal */
+  #imgTextContainer {
+	position: absolute;
+	top: -20px;
+	margin-left: -5px;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  #imgText p {
+	margin-bottom: 15px; 
+	font-size: 35px;
+	width: 75%;
+  }
+  #imgText h3{
+	color: rgb(12, 231, 49);
+	font-size: 65px;
+	text-align: center;
+	left: 70px;
+	top: 50px;
+	margin-bottom: 40px;
+}
+  
+.close {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	font-size: 60px;
+	cursor: pointer;
+	color: #555;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 30px;
+	cursor: pointer;
+	margin-top: 10px;
+  }
+  .menu-icon i {	/*estilo de menu de barras*/
+	font-size: 20px; 
+	margin-bottom: 0px;
+  }
+  
+  .menu-icon.active + .menu {	/*opcion para desplegar menu*/
+	display: flex;
+  }
+	.navbar {	/*posicion del menu de barras*/
+		padding: 1rem 2rem;
+		height: 100px;
+	}
+
+	.navbar .fa-bars {	/*estilo del menu de barras*/
+		display: block;
+		color: #fff;
+		font-size: 7rem;
+	}
+
+	.menu {	/*ocultar menu de barras*/
+		display: none;
+	}
+	.menu a{  /*estilo opciones del menu principal*/
+		text-decoration: none;
+		font-size: 3.2rem;
+		color: white;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		margin: auto;
+		margin-top: -42px;
+		margin-left: -90px;
+	}
+	.menu li{	/*posicion de opciones del menu*/
+		display: flex; 
+		list-style: none;
+		margin: 63px;
+	
+		}
+
+		.SUBTITU{  /*ubicacion de subtitulo y tamaño*/
+			padding-top: 30px;
+			text-align: center;
+			font-size: 70px;
+		
+		}
+		.container-options {  /*ubicacion de opciones frutas tipo*/
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			margin-bottom: 1rem;
+		}
+		
+		.container-options { /*tamaño de opciones */
+			display: flex;
+			padding: 1.7rem 3rem;
+			font-size: 3rem;
+			text-transform: capitalize;
+			border-radius: 4rem;
+			cursor: pointer;
+		  }	
+		  .cartas {  /*estructura de cada carta fruta*/
+			width: 400px;
+			height: 600px;
+			background-color: #fff;
+			padding: 2rem 3rem;
+			border-radius: 0.5rem;
+			cursor: pointer;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+			border: 1px solid green;
+			margin: auto;
+		}
+
+		.stars {  /*ubicacion estrellas*/
+			grid-row: 1/2;
+			grid-column: 1/-1;
+		}
+		
+		.stars i { /*estilo estrellas*/
+			font-size: 2.3rem;
+			color: var(--primary-color);
+			text-align: center;
+			margin: auto;
+			justify-content: center;
+			margin-top: 5px;
+		}
+		
+		.conte-iconos h3 { /*estilo nombres cartas*/
+			grid-row: 2/3;
+			grid-column: 1/-1;
+			font-weight: 400;
+			font-size: 5rem;
+			margin-bottom: -1.5rem;
+			cursor: pointer;
+		}
+
+		  .price {
+			/* tamaño precios */
+			font-size: 3.0rem;
+			font-weight: 600;
+		  }
+		  
+		  .price-span {
+			/* subrayado precios */
+			font-size: 2.5rem;
+			font-weight: 400;
+			text-decoration: line-through;
+			color: #777;
+			margin-left: auto; /* Alinea el span a la derecha */
+		  }
+		  
+	/* Footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Contenedor del Footer */
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr; /* Cambiado a una sola columna */
+    gap: 10px;
+}
+
+/* Columnas dentro del Footer */
+.menu-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.information,
+.contact-info,
+.formu {
+  padding: 40px 20px; 
+  border-radius: 22px;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+}
+.texto{ /*texto de quienes somos*/
+	color: white;
+	font-size: 13px;
+	margin-top: 20px;
+	margin: 0 15px;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.titlemapa{	 /* estilo titulo del mapa*/
+	margin-top: -130px;
+	font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+/* Estilos compartidos para cada sección*/
+.title-footer,
+.texto,
+.datoscontac,
+.titlemapa,
+.information,
+.contact-info,
+.formu,
+.Ubicación {
+    grid-column: span 1; /* Hace que cada sección ocupe toda la anchura */
+    margin-left: 10px;   /* Añade un pequeño margen a la izquierda */
+    margin-right: 10px;  /* Añade un pequeño margen a la derecha */
+	text-align: center;
+}
+
+
+.Ubicación {
+    margin: 30px auto; /* Centra el contenedor horizontalmente */
+    width: 920px; /* Ajusta el ancho máximo según tus necesidades */
+	height: 750px;
+}
+
+/* Estilo para el iframe dentro de Ubicación */
+.Ubicación iframe {
+    width: 140%; /* Ajusta el ancho según tus necesidades */
+    height: 200%; /* Ajusta la altura según tus necesidades */
+    max-width: 300%; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 600px; /* Ajusta la altura máxima según tus necesidades */
+    border: 0;
+	margin: 20px auto;
+	margin-left: -120px;
+    aspect-ratio: 16 / 9; /* Proporción de aspecto 16:9 (puedes ajustar según tus necesidades) */
+}
+
+/* Estilos del formulario dentro del Footer */
+form {
+    max-width: 75%; /* Hace que el formulario ocupe toda la anchura disponible */
+    margin: left;
+    margin-top: 20px; /* Añade un margen superior al formulario */
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+	float: left;
+	font-size: 2.6rem;
+}
+/*estilo campos-formulario*/
+input {
+    width: 100%;
+    padding: 22px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+	font-size: 25px;
+}
+/*estilo-boton enviar*/
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+	font-size: 3.5rem;
+	border-radius: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Estilo para la lista de compras */
+#listacompra {
+    width: 100%;
+    height: 390px;
+    resize: none;
+    padding: 10px;
+    font-size: 26px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul li, /*color de medios de contacto*/
+.information ul li,
+.Ubicación ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 2.6rem;
+	font-weight: 300;
+}
+
+/* Espacio entre formas de medios de contacto */
+.contact-info ul,
+.information ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 30px; /* Añade un margen superior a las listas de contacto */
+}
+
+/* Estilo para los iconos sociales */
+.social-icons {		/*direccion de los iconos*/
+	display: flex;
+	gap: 1.5rem;
+	cursor: pointer;
+	margin: auto;
+	margin-left: 300px;
+	margin-top: 20px;
+}
+
+/* Estilo para el cuerpo de los iconos sociales */
+.social-icons span {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el color del cuerpo de los iconos sociales */
+.social-icons span i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+}
